@@ -1,0 +1,40 @@
+[
+  {
+    "id": "obi-bevermann",
+    "productId": "bevermann-15",
+    "seller": "OBI E-Commerce GmbH",
+    "price": 7.39,
+    "weightKg": 15,
+    "currency": "EUR",
+    "vat": 0.07,
+    "vatIncluded": true,
+    "delivery": "request",
+    "shipping": 6.95,
+    "shippingScope": "Published parcel fee for one order; quantity and postcode require checkout confirmation.",
+    "postcode": null,
+    "type": "bag",
+    "region": "Germany",
+    "source": "https://www.obi.de/p/2353712/holzpellets-6-mm-sackware-15-kg",
+    "checkedAt": "2026-10-16T11:15:00Z",
+    "status": "verified"
+  },
+  {
+    "id": "obi-heizfuxx",
+    "productId": "heizfuxx-red",
+    "seller": "3NRG · OBI Marketplace",
+    "price": 769.9,
+    "weightKg": 975,
+    "currency": "EUR",
+    "vat": 0.07,
+    "vatIncluded": true,
+    "delivery": "request",
+    "shipping": 0,
+    "shippingScope": "Listing advertises free freight; Berlin postcode not confirmed.",
+    "postcode": null,
+    "type": "pallet",
+    "region": "Germany",
+    "source": "https://www.obi.de/p/2191054041694/heizfuxx-red-enplus-a1-holzpellets-hartholz-15kg-x-65-sack-975kg-palette",
+    "checkedAt": "2026-10-16T11:15:00Z",
+    "status": "verified"
+  }
+]

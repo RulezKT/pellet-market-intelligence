@@ -1,0 +1,24 @@
+[
+  {
+    "id": "depi-de-2026-09",
+    "source": "https://www.depi.de/presse/d/pellets-im-september-deutlich-guenstiger-als-oel-und-gas/",
+    "date": "2026-09-16",
+    "region": "Germany",
+    "tonnes": 6,
+    "price": 454.21,
+    "vatIncluded": true,
+    "deliveryIncluded": true,
+    "status": "verified"
+  },
+  {
+    "id": "depi-no-2026-09",
+    "source": "https://www.depi.de/presse/d/pellets-im-september-deutlich-guenstiger-als-oel-und-gas/",
+    "date": "2026-09-16",
+    "region": "Nord/Ost",
+    "tonnes": 6,
+    "price": 455.24,
+    "vatIncluded": true,
+    "deliveryIncluded": true,
+    "status": "verified"
+  }
+]

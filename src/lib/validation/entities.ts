@@ -1,0 +1,15 @@
+﻿import {z} from 'zod';
+import {status} from './index';
+const id=z.string().min(1),amount=z.number().nonnegative(),url=z.url({protocol:/^https?$/});
+export const ManufacturingSiteSchema=z.object({id,manufacturerId:id,address:id,capacityTonnes:amount.nullable()});
+export const BrandSchema=z.object({id,name:id,ownerId:id.nullable()});
+export const SellerSchema=z.object({id,name:id,source:url});
+export const CertificateSchema=z.object({name:id,number:id.nullable(),source:url});
+export const ShippingQuoteSchema=z.object({offerId:id,postcode:z.string().regex(/^\d{5}$/),tonnes:z.number().positive(),price:amount.nullable(),validAt:z.iso.datetime(),status:z.enum(['quoted','estimated','request'])});
+export const RawMaterialSchema=z.object({name:id,unit:z.enum(['t','solid-m3','loose-m3']),price:amount,moisture:z.number().min(0).lt(1),wetDensity:z.number().positive(),loss:z.number().min(0).lt(1)});
+export const EquipmentSchema=z.object({name:id,source:url,capacity:amount.nullable(),price:amount.nullable()});
+export const FactoryConfigurationSchema=z.object({name:id,assumptions:z.record(id,amount),status:z.literal('estimated')});
+export const LogisticsRouteSchema=z.object({origin:id,destination:id,costPerTon:amount,status:z.enum(['estimated','manual'])});
+export const BusinessScenarioSchema=z.object({version:z.literal(1),name:id,assumptions:z.record(id,amount)});
+export const CostAssumptionSchema=z.object({name:id,value:amount,unit:id,status,source:url.nullable()});
+export const FinancialProjectionSchema=z.object({revenue:amount,opex:amount,ebitda:z.number(),depreciation:amount,interest:amount,tax:amount,cashFlow:z.number()});

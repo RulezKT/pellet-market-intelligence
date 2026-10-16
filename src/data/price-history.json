@@ -1,0 +1,16 @@
+[
+  {
+    "offerId": "obi-bevermann",
+    "price": 7.39,
+    "weightKg": 15,
+    "observedAt": "2026-10-16T11:15:00Z",
+    "source": "https://www.obi.de/p/2353712/holzpellets-6-mm-sackware-15-kg"
+  },
+  {
+    "offerId": "obi-heizfuxx",
+    "price": 769.9,
+    "weightKg": 975,
+    "observedAt": "2026-10-16T11:15:00Z",
+    "source": "https://www.obi.de/p/2191054041694/heizfuxx-red-enplus-a1-holzpellets-hartholz-15kg-x-65-sack-975kg-palette"
+  }
+]

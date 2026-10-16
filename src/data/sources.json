@@ -1,0 +1,58 @@
+[
+  {
+    "id": "obi",
+    "name": "OBI",
+    "url": "https://www.obi.de/p/2353712/holzpellets-6-mm-sackware-15-kg",
+    "status": "manual",
+    "note": "Public listings manually checked. Automated reuse permission not established.",
+    "checkedAt": "2026-10-16T11:15:00Z"
+  },
+  {
+    "id": "depi",
+    "name": "DEPI",
+    "url": "https://www.depi.de/presse/d/pellets-im-september-deutlich-guenstiger-als-oel-und-gas/",
+    "status": "permission-required",
+    "note": "September 2026 bulletin manually verified. Delivery radius 50 km, 6 t, ENplus A1, VAT included. Reuse conditions require review.",
+    "checkedAt": "2026-10-16T11:15:00Z"
+  },
+  {
+    "id": "german-pellets",
+    "name": "German Pellets",
+    "url": "https://www.german-pellets.de/",
+    "status": "manual",
+    "note": "Manufacturer and brand information checked; no public wholesale quote.",
+    "checkedAt": "2026-10-16T11:15:00Z"
+  },
+  {
+    "id": "bauhaus",
+    "name": "BAUHAUS",
+    "url": "https://www.bauhaus.info/",
+    "status": "permission-required",
+    "note": "Not connected. Public access and automated reuse conditions have not been verified.",
+    "checkedAt": null
+  },
+  {
+    "id": "hornbach",
+    "name": "HORNBACH",
+    "url": "https://www.hornbach.de/",
+    "status": "permission-required",
+    "note": "Not connected. Public access and automated reuse conditions have not been verified.",
+    "checkedAt": null
+  },
+  {
+    "id": "toom",
+    "name": "toom",
+    "url": "https://www.toom.de/",
+    "status": "permission-required",
+    "note": "Not connected. Public access and automated reuse conditions have not been verified.",
+    "checkedAt": null
+  },
+  {
+    "id": "hagebau",
+    "name": "hagebau",
+    "url": "https://www.hagebau.de/",
+    "status": "permission-required",
+    "note": "Not connected. Public access and automated reuse conditions have not been verified.",
+    "checkedAt": null
+  }
+]

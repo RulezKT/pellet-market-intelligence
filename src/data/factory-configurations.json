@@ -1,0 +1,23 @@
+[
+  {
+    "name": "European industrial",
+    "capex": 12000000,
+    "kwh": 140,
+    "status": "estimated",
+    "note": "User-editable illustrative assumption, not an equipment quotation."
+  },
+  {
+    "name": "Combined equipment",
+    "capex": 9000000,
+    "kwh": 160,
+    "status": "estimated",
+    "note": "User-editable illustrative assumption, not an equipment quotation."
+  },
+  {
+    "name": "Budget configuration",
+    "capex": 6000000,
+    "kwh": 190,
+    "status": "estimated",
+    "note": "User-editable illustrative assumption, not an equipment quotation."
+  }
+]

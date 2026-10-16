@@ -1,0 +1,27 @@
+[
+  {
+    "id": "wismar",
+    "name": "Wismar Pellets GmbH",
+    "country": "DE",
+    "brands": [
+      "German Pellets"
+    ],
+    "sites": [
+      {
+        "name": "Wismar contact address",
+        "address": "Am Torney 2a, 23970 Wismar",
+        "capacity": null
+      }
+    ],
+    "certificates": [
+      "DINplus",
+      "ENplus A1"
+    ],
+    "forms": [
+      "bag",
+      "bulk"
+    ],
+    "source": "https://www.german-pellets.de/",
+    "checkedAt": "2026-10-16T11:15:00Z"
+  }
+]

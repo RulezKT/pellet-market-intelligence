@@ -1,0 +1,43 @@
+[
+  {
+    "id": "bevermann-15",
+    "name": "Bevermann Holzpellets",
+    "brand": "Bevermann",
+    "manufacturerId": null,
+    "siteId": null,
+    "importer": null,
+    "country": null,
+    "wood": "unknown",
+    "diameter": 6,
+    "certificates": [
+      "DINplus",
+      "A1"
+    ],
+    "bagKg": 15,
+    "bags": 1,
+    "image": "https://bilder.obi.de/b1dfc14d-f516-48e8-90ea-167639e988c3/pr08A/image.jpeg",
+    "source": "https://www.obi.de/p/2353712/holzpellets-6-mm-sackware-15-kg",
+    "heat": 4.6,
+    "ash": 0.7
+  },
+  {
+    "id": "heizfuxx-red",
+    "name": "Heizfuxx Red",
+    "brand": "Heizfuxx",
+    "manufacturerId": null,
+    "siteId": null,
+    "importer": null,
+    "country": null,
+    "wood": "hardwood",
+    "diameter": null,
+    "certificates": [
+      "ENplus A1"
+    ],
+    "bagKg": 15,
+    "bags": 65,
+    "image": "https://bilder.obi.de/38e5f0cc-5465-4f27-b07c-014174503082/pr08A/image.png",
+    "source": "https://www.obi.de/p/2191054041694/heizfuxx-red-enplus-a1-holzpellets-hartholz-15kg-x-65-sack-975kg-palette",
+    "heat": 4.6,
+    "ash": 0.7
+  }
+]

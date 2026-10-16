@@ -1,0 +1,8 @@
+﻿---
+import Layout from '../../layouts/Layout.astro';
+import App from '../../components/App';
+import {data} from '../../data';
+export function getStaticPaths(){return data.manufacturers.map(m=>({params:{id:m.id},props:{id:m.id}}));}
+const {id}=Astro.props;
+---
+<Layout route="manufacturers"><App client:load route="manufacturers" manufacturerId={id}/></Layout>
