@@ -15,3 +15,17 @@
 - Sensitivity changes one factor at a time, clamps moisture below 100% and utilization to 100%. Interest and construction CAPEX do not affect EBITDA directly. Downside/upside cases are editable combined shocks to raw materials, electricity, selling price and utilization.
 
 Factory, heat, port and equipment defaults are assumptions; all estimates are marked. The three equipment configurations are parameter sets, not real manufacturer offers. Combined business comparisons use common selling price and annual volume. Capacity exceedance is reported. OPEX and payback are simplified and exclude complete tax/debt modelling.
+
+## Independent packaging economics
+
+The independent calculator is `src/components/PackagingEconomics.tsx`; its pure Decimal.js calculation functions and Zod input schema are in `src/lib/calculations/packaging-economics.ts`.
+
+- Finished pallet mass = bag kg × positive integer bags. Normalized results use that exact mass in tonnes; a 975 kg pallet is not rounded to one tonne.
+- Sale revenue net = selected bag/pallet price converted from gross when applicable. Purchase rates for bulk and ready-packed resale independently convert to net using their stated/assumed VAT. Other expense inputs are net. VAT is assumed recoverable; this is not a model for businesses unable to reclaim input VAT.
+- Model B raw cost = net bulk €/t × finished tonnes / (1 − material loss). Bags and other finished-product costs are not multiplied by raw loss. Model A uses its own normalized ready-packed procurement price and does not incur B's packaging losses or equipment/labour costs.
+- Both models include warehouse, delivery, other expenses, seller commission on net revenue, and the same editable monthly fixed expense. Packaging labour and electricity apply to B only. Shared fixed expenses avoid an unrequested assumption about differing overhead between models.
+- Full pallet cost includes fixed expense allocated over the entered monthly sales tonnes. At zero monthly volume and positive fixed expenses, unit cost/result is undefined and shown as a dash; monthly result still charges fixed expense.
+- Return on sales = pallet result / net pallet revenue. Zero revenue gives no defined percentage. Break-even monthly tonnes = monthly fixed expense / positive contribution per tonne. Break-even net pallet sale price solves for the revenue needed to cover non-commission costs plus allocated fixed expenses, including the commission revenue share.
+- Monthly and annual results use independently entered sales tonnes. Annual fixed expense equals 12 × monthly fixed expense. Results exclude unmodelled taxes, financing and other costs and are not labelled net profit.
+- Optimistic shock raises selling price and lowers procurement/operating/fixed cost by the entered percentage; pessimistic shock does the opposite. Commission remains a share of revenue; volumes and physical losses are unchanged.
+- Source offer application copies bag/pallet data, price and source VAT where known, without touching bulk purchase assumptions. An offer for several bags is normalized back to one bag when used as the bag selling-price reference. No index is treated as a factory procurement quote.

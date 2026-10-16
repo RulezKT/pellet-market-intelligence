@@ -62,3 +62,9 @@ Open `/pellet-market-intelligence/`. Remove the environment variable with `Remov
 Scheduled updates use a dedicated PR branch. GitHub must allow Actions to create pull requests. Changes are published after review/merge. If the repository blocks PR creation, collection reports are still uploaded. Use a least-privilege bot or GitHub App only if you need workflows triggered by bot PRs; GITHUB_TOKEN-created PRs may not trigger other workflows automatically.
 
 See [architecture](docs/architecture.md), [calculations](docs/calculations.md) and [remaining work](docs/roadmap.md).
+
+## Packaging economics
+
+`/packaging-economics/` is an independent client calculator; the existing `/packaging/` model remains available. Choose a bag or pallet offer to apply its price, VAT basis and pack dimensions. Missing pallet counts remain explicit user assumptions. The original source price, date, manufacturer (or unknown) and URL are displayed separately from editable scenario fields. Private browser-imported market data is supported.
+
+The calculator compares ready-packed resale (A) and bulk purchase with own packaging (B), on the same finished pallet mass and user-defined monthly/annual sales. It supports separate purchase/sale VAT rates, commission, losses, fixed expenses, optimistic/base/pessimistic assumptions, clipboard copy and CSV export with inputs, results and source provenance. Values autosave under `pmi-packaging-economics-v1`. Default values and scenario shocks are demonstration assumptions. No DEPI index is used as a purchase cost.

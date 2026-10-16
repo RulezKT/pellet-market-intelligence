@@ -1,8 +1,9 @@
 ﻿---
 import Layout from '../layouts/Layout.astro';
 import App from '../components/App';
+import PackagingEconomics from '../components/PackagingEconomics';
 import {routes} from '../i18n';
 export function getStaticPaths(){return routes.filter(Boolean).map(route=>({params:{route},props:{route}}));}
 const {route}=Astro.props;
 ---
-<Layout route={route}><App client:load route={route}/></Layout>
+<Layout route={route}>{route==='packaging-economics'?<PackagingEconomics client:load/>:<App client:load route={route}/>}</Layout>
